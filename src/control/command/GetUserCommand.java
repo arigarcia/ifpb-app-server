@@ -1,4 +1,4 @@
-package control;
+package control.command;
 
 import infra.ConnectionFactory;
 import infra.UserGateway;
@@ -35,7 +35,7 @@ public class GetUserCommand implements Command {
         json.put("name", user.getName());
         //
         result.setSuccess(true);
-        result.setMessage("Requisição realizada com sucesso.");
+        result.setMessage(JSONResult.MESSAGE_SUCCESS);
         result.setData(json);
       }
       catch (Exception e) {

@@ -1,4 +1,4 @@
-package control;
+package control.command;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -16,6 +16,13 @@ public class CommandFactory {
       else if (url.contains("/user/")){
         String email = url.substring("/user/".length(), url.length());
         return new GetUserCommand(email);
+      }
+      return new ErrorCommand();
+    }
+    case "POST":{
+      //salvar um usuário
+      if (url.contains("/user")){
+        return new PostUserCommand();
       }
       return new ErrorCommand();
     }

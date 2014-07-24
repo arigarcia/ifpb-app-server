@@ -1,4 +1,4 @@
-package control;
+package control.command;
 
 import java.util.Arrays;
 

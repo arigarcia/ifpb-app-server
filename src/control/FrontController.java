@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import control.command.Command;
+import control.command.CommandFactory;
+
 @SuppressWarnings("serial")
 public class FrontController extends HttpServlet {
   private String GET = "GET";

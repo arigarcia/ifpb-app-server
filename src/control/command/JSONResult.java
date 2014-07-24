@@ -1,10 +1,12 @@
-package control;
+package control.command;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class JSONResult {
   private JSONObject json;
+  
+  public static final String MESSAGE_SUCCESS = "Requisição realizada com sucesso.";
   
   public JSONResult() {
     json = new JSONObject();
