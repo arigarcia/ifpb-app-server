@@ -24,8 +24,8 @@ public class RouteGatewayTest extends TestCase {
         assertNotNull(route1);
         assertEquals(2, route1.getCoordinates().length);
         //
-        gateway.remove(route1);
-        Route route2 = gateway.find(id);
-        assertNull(route2);
+//        gateway.remove(route1);
+//        Route route2 = gateway.find(id);
+//        assertNull(route2);
     }
 }

@@ -17,4 +17,13 @@ public class Coordinate {
         return longitude;
     }
     
+    @Override
+    public String toString() {
+      return new StringBuffer()
+        .append(latitude)
+        .append(",")
+        .append(longitude)
+        .toString();
+    }
+    
 }
